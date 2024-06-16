@@ -1,0 +1,20 @@
+@RaionRecruitmentTaskAPI_HostAddress = https://localhost:7092
+
+GET {{RaionRecruitmentTaskAPI_HostAddress}}/api/balance/1
+Accept: application/json
+
+###
+POST {{RaionRecruitmentTaskAPI_HostAddress}}/api/balance/deposit
+Content-Type:application/json
+{
+   "BalanceId" : 1,
+  "DepositValue" : 100.00
+}
+
+###
+POST {{RaionRecruitmentTaskAPI_HostAddress}}/api/balance/withdraw
+Content-Type:application/json
+{
+
+  "WithdrawValue" : -50
+}
